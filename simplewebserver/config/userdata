@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# install and set http server for startup
+/usr/bin/yum install httpd -y
+/usr/sbin/chkconfig httpd on
+
+# get the web root
+/usr/bin/curl https://raw.githubusercontent.com/magomi/awsplayground/master/simplewebserver/webroot/deadend.svg >> /var/www/html/deadend.svg
+/usr/bin/curl https://raw.githubusercontent.com/magomi/awsplayground/master/simplewebserver/webroot/index.html >> /var/www/html/index.html
+
+# start the http server
+/usr/sbin/service start httpd
+
+
+ 
+
