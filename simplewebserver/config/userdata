@@ -6,6 +6,7 @@
 # get the web root
 /usr/bin/curl https://raw.githubusercontent.com/magomi/awsplayground/master/simplewebserver/webroot/deadend.svg >> /var/www/html/deadend.svg
 /usr/bin/curl https://raw.githubusercontent.com/magomi/awsplayground/master/simplewebserver/webroot/index.html >> /var/www/html/index.html
+/usr/bin/curl https://raw.githubusercontent.com/magomi/awsplayground/master/simplewebserver/webroot/alive >> /var/www/html/alive
 
 
 
